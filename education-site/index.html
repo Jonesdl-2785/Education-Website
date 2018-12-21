@@ -6,15 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Job Ready Depot</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 
-<body>
+<!-- Modal Box -->
+<input type="checkbox" id="registration" style="display:none">
+<form action="index.html" id="register">
+  <label for="registration" id="close">&times;</label>
+  <label for="username">Name: </label>
+  <input type="text" placeholder="Your Name">
+  <label for="email">Email: </label>
+  <input type="email" placeholder="Email">
+  <label for="login">Login: </label>
+  <input type="text" placeholder="User Login">
+  <label for="password">Password: </label>
+  <input type="password" placeholder="Choose a Password">
+  <label for="password">Confirm Password: </label>
+  <input type="password" placeholder="Confirm Password">
+  <input type="submit" value="Register">
+</form>
+
+<input type="checkbox" id="login" style="display:none">
+<form action="index.html" id="sign-in">
+  <label for="login" id="close">&times;</label>
+  <label for="email">Email: </label>
+  <input type="email" placeholder="Email address">
+  <label for="password">Password: </label>
+  <input type="password" placeholder="Enter Password">
+  <input type="submit" value="Login">
+</form>
+<!-- End Modal Box -->
+
   <!-- Main Container -->
   <div class="main-container">
     <!-- Navigation -->
+
+    <input type="checkbox" id="menu" style="display:none">
+    <label for="menu"><i class="fas fa-bars"></i></label>
     <nav>
       <ul class="nav1">
         <li><a href="#" id="active">Home</a></li>
@@ -34,8 +65,8 @@
       </ul>
 
       <ul class="nav2">
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Registration</a></li>
+        <li><a href="#"><label for="login">Login</a></li>
+        <li><a href="#"><label for="registration">Registration</label></a></li>
       </ul>
     </nav>
     <!-- End Navigation -->
