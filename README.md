@@ -1,4 +1,5 @@
 # Education Site
-HTML5, CSS3 responsive website
+Basic HTML5 and CSS3 responsive website which uses advanced CSS and features login and registration forms.
 
-## To Be Added
+## 
+
